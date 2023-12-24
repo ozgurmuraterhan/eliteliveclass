@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * MiroTalk SFU - Client component
+ * nohutakademi SFU - Client component
  *
  * @link    GitHub: https://github.com/miroslavpejic85/mirotalksfu
  * @link    Official Live demo: https://sfu.mirotalk.com

@@ -2,7 +2,7 @@
 
 ## Create a meeting
 
-Create a meeting with a `HTTP request` containing the `API_KEY` sent to MiroTalk’s server. The response contains a `meeting` URL that can be `embedded` in your client within an `iframe`.
+Create a meeting with a `HTTP request` containing the `API_KEY` sent to nohutakademi’s server. The response contains a `meeting` URL that can be `embedded` in your client within an `iframe`.
 
 The `API_KEY` is defined in the `app/src/config.js`, change it with your own.
 

@@ -32,8 +32,8 @@ module.exports = {
         },
         ssl: {
             // ssl/README.md
-/*            cert: '../ssl/cert.pem',
-            key: '../ssl/key.pem',*/
+        cert: '../ssl/cert.pem',
+            key: '../ssl/key.pem',
         },
     },
     host: {
@@ -62,7 +62,7 @@ module.exports = {
             Additional layers can be added to specify valid presenters and co-presenters by setting designated usernames.
         */
         'Miroslav Pejic',
-        'MiroTalk Admin',
+        'nohutakademi Admin',
     ],
     console: {
         debug: true,
