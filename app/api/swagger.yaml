@@ -1,8 +1,8 @@
 swagger: '2.0'
 
 info:
-    title: nohutakademi SFU API
-    description: API description for external applications that integrates with nohutakademi SFU.
+    title: Elit Live SFU API
+    description: API description for external applications that integrates with Elit Live SFU.
     version: 1.0.0
 
 basePath: /api/v1

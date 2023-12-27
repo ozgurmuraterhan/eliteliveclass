@@ -1,12 +1,12 @@
-# nohutakademi Open Source Community Code of Conduct
+# Elit Live Open Source Community Code of Conduct
 
 ## About the Code of Conduct
 
-Equality is a core value at nohutakademi. We believe a diverse and inclusive
+Equality is a core value at Elit Live. We believe a diverse and inclusive
 community fosters innovation and creativity, and are committed to building a
 culture where everyone feels included.
 
-nohutakademi open-source projects are committed to providing a friendly, safe, and
+Elit Live open-source projects are committed to providing a friendly, safe, and
 welcoming environment for all, regardless of gender identity and expression,
 sexual orientation, disability, physical appearance, body size, ethnicity, nationality,
 race, age, religion, level of experience, education, socioeconomic status, or
@@ -18,7 +18,7 @@ together effectively, productively, and respectfully in our open source communit
 It also establishes a mechanism for reporting issues and resolving conflicts.
 
 All questions and reports of abusive, harassing, or otherwise unacceptable behavior
-in a nohutakademi open-source project may be reported by contacting the nohutakademi
+in a Elit Live open-source project may be reported by contacting the Elit Live
 Open Source Conduct Committee at ossconduct.mirotalk@gmail.com.
 
 ## Our Pledge
@@ -77,7 +77,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the nohutakademi Open Source Conduct Committee
+reported by contacting the Elit Live Open Source Conduct Committee
 at ossconduct.mirotalk@gmail.com. All complaints will be reviewed and investigated
 and will result in a response that is deemed necessary and appropriate to the
 circumstances. The committee is obligated to maintain confidentiality with
@@ -86,7 +86,7 @@ policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership and the nohutakademi Open Source Conduct
+members of the project's leadership and the Elit Live Open Source Conduct
 Committee.
 
 ## Attribution

@@ -3,7 +3,7 @@
 if (location.href.substr(0, 5) !== 'https') location.href = 'https' + location.href.substr(4, location.href.length - 4);
 
 /**
- * nohutakademi SFU - Room component
+ * Elit Live SFU - Room component
  *
  * @link    GitHub: https://github.com/miroslavpejic85/mirotalksfu
  * @link    Official Live demo: https://sfu.mirotalk.com
@@ -720,7 +720,7 @@ function whoAreYou() {
         allowOutsideClick: false,
         allowEscapeKey: false,
         background: swalBackground,
-        title: 'nohutakademi SFU',
+        title: 'Elit Live SFU',
         input: 'text',
         inputPlaceholder: 'İsminizi Girin',
         inputAttributes: { maxlength: 32 },
@@ -943,7 +943,7 @@ function shareRoomByEmail() {
             const selectedDateTime = document.getElementById('datetimePicker').value;
             const newLine = '%0D%0A%0D%0A';
             const email = '';
-            const emailSubject = `Please join our nohutakademi SFU Video Chat Meeting`;
+            const emailSubject = `Please join our Elit Live SFU Video Chat Meeting`;
             const emailBody = `The meeting is scheduled at: ${newLine} DateTime: ${selectedDateTime} ${newLine} Click to join: ${RoomURL} ${newLine}`;
             document.location = 'mailto:' + email + '?subject=' + emailSubject + '&body=' + emailBody;
         },
@@ -2260,7 +2260,7 @@ function leaveFeedback() {
         background: swalBackground,
         imageUrl: image.feedback,
         title: 'Leave a feedback',
-        text: 'Do you want to rate your nohutakademi experience?',
+        text: 'Do you want to rate your Elit Live experience?',
         confirmButtonText: `Yes`,
         denyButtonText: `No`,
         showClass: { popup: 'animate__animated animate__fadeInDown' },
@@ -3390,7 +3390,7 @@ function showAbout() {
             Email:<a 
                 id="email-button" 
                 data-umami-event="Email button" 
-                href="mailto:miroslav.pejic.85@gmail.com?subject=nohutakademi SFU info"> 
+                href="mailto:miroslav.pejic.85@gmail.com?subject=Elit Live SFU info"> 
                 miroslav.pejic.85@gmail.com
             </a>
         </div>

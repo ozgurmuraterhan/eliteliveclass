@@ -32,7 +32,7 @@ dependencies: {
 */
 
 /**
- * nohutakademi SFU - Server component
+ * Elit Live SFU - Server component
  *
  * @link    GitHub: https://github.com/miroslavpejic85/mirotalksfu
  * @link    Official Live demo: https://sfu.mirotalk.com
@@ -401,7 +401,7 @@ function startServer() {
         let authorization = req.headers.authorization;
         let api = new ServerApi(host, authorization);
         if (!api.isAuthorized()) {
-            log.debug('nohutakademi get meeting - Unauthorized', {
+            log.debug('Elit Live get meeting - Unauthorized', {
                 header: req.headers,
                 body: req.body,
             });
@@ -412,7 +412,7 @@ function startServer() {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ meeting: meetingURL }));
         // log.debug the output if all done
-        log.debug('nohutakademi get meeting - Authorized', {
+        log.debug('Elit Live get meeting - Authorized', {
             header: req.headers,
             body: req.body,
             meeting: meetingURL,
@@ -426,7 +426,7 @@ function startServer() {
         let authorization = req.headers.authorization;
         let api = new ServerApi(host, authorization);
         if (!api.isAuthorized()) {
-            log.debug('nohutakademi get join - Unauthorized', {
+            log.debug('Elit Live get join - Unauthorized', {
                 header: req.headers,
                 body: req.body,
             });
@@ -437,7 +437,7 @@ function startServer() {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ join: joinURL }));
         // log.debug the output if all done
-        log.debug('nohutakademi get join - Authorized', {
+        log.debug('Elit Live get join - Authorized', {
             header: req.headers,
             body: req.body,
             join: joinURL,
