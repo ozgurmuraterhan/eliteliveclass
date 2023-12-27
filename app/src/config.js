@@ -32,7 +32,7 @@ module.exports = {
         },
         ssl: {
             // ssl/README.md
-      /*  cert: '../ssl/cert.pem',
+     /*cert: '../ssl/cert.pem',
             key: '../ssl/key.pem',*/
         },
     },

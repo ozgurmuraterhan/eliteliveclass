@@ -59,8 +59,8 @@ const Base64Prefix = 'data:application/pdf;base64,';
 
 const wbImageInput = 'image/*';
 const wbPdfInput = 'application/pdf';
-const wbWidth = 1200;
-const wbHeight = 600;
+const wbWidth = window.innerWidth;
+const wbHeight = window.innerHeight;
 
 const swalImageUrl = '../images/pricing-illustration.svg';
 
