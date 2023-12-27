@@ -836,10 +836,10 @@ class RoomClient {
             background: swalBackground,
             imageUrl: image.user,
             position: 'center',
-            title: 'Username',
-            html: `The Username is already in use. <br/> Please try with another one`,
+            title: 'Kullanıcı Adı',
+            html: `Bu kullanıcı adı halihazırda kullanılıyor. <br/> Lütfen başka bir isim deneyin`,
             showDenyButton: false,
-            confirmButtonText: `OK`,
+            confirmButtonText: `Tamam`,
             showClass: { popup: 'animate__animated animate__fadeInDown' },
             hideClass: { popup: 'animate__animated animate__fadeOutUp' },
         }).then((result) => {
@@ -1542,11 +1542,11 @@ class RoomClient {
                 if (isScreen) pn.click();
                 handleAspectRatio();
                 if (!this.isMobileDevice) {
-                    this.setTippy(pn.id, 'Toggle Pin', 'bottom');
-                    this.setTippy(pip.id, 'Toggle picture in picture', 'bottom');
-                    this.setTippy(ts.id, 'Snapshot', 'bottom');
-                    this.setTippy(vp.id, 'Toggle video privacy', 'bottom');
-                    this.setTippy(au.id, 'Audio status', 'bottom');
+                    this.setTippy(pn.id, 'Sabitle', 'bottom');
+                    this.setTippy(pip.id, 'Pencere içinde pencere', 'bottom');
+                    this.setTippy(ts.id, 'Resim Çek', 'bottom');
+                    this.setTippy(vp.id, 'Video Merkezini Göster/Gizle', 'bottom');
+                    this.setTippy(au.id, 'Ses Durumu', 'bottom');
                 }
                 console.log('[addProducer] Video-element-count', this.videoMediaContainer.childElementCount);
                 break;
@@ -1928,16 +1928,16 @@ class RoomClient {
                 handleAspectRatio();
                 console.log('[addConsumer] Video-element-count', this.videoMediaContainer.childElementCount);
                 if (!this.isMobileDevice) {
-                    this.setTippy(pn.id, 'Toggle Pin', 'bottom');
-                    this.setTippy(pip.id, 'Toggle picture in picture', 'bottom');
-                    this.setTippy(ts.id, 'Snapshot', 'bottom');
-                    this.setTippy(sf.id, 'Send file', 'bottom');
-                    this.setTippy(sm.id, 'Send message', 'bottom');
-                    this.setTippy(sv.id, 'Send video', 'bottom');
-                    this.setTippy(cm.id, 'Hide', 'bottom');
-                    this.setTippy(au.id, 'Mute', 'bottom');
-                    this.setTippy(pv.id, '🔊 Volume', 'bottom');
-                    this.setTippy(ko.id, 'Eject', 'bottom');
+                    this.setTippy(pn.id, 'Sabitle', 'bottom');
+                    this.setTippy(pip.id, 'Pencere içinde pencere', 'bottom');
+                    this.setTippy(ts.id, 'Resim Çek', 'bottom');
+                    this.setTippy(sf.id, 'Dosya Gönder', 'bottom');
+                    this.setTippy(sm.id, 'Mesaj Gönder', 'bottom');
+                    this.setTippy(sv.id, 'Video Gönder', 'bottom');
+                    this.setTippy(cm.id, 'Gizle', 'bottom');
+                    this.setTippy(au.id, 'Sessize al', 'bottom');
+                    this.setTippy(pv.id, '🔊 Ses', 'bottom');
+                    this.setTippy(ko.id, 'At', 'bottom');
                 }
                 break;
             case mediaType.audio:
@@ -2620,10 +2620,10 @@ class RoomClient {
         let videoPlayer = this.getId(elemId);
         let btnFs = this.getId(fsId);
         if (btnFs) {
-            this.setTippy(fsId, 'Full screen', 'bottom');
+            this.setTippy(fsId, 'Tam Ekran', 'bottom');
             btnFs.addEventListener('click', () => {
                 if (videoPlayer.classList.contains('videoCircle')) {
-                    return userLog('info', 'Full Screen not allowed if video on privacy mode', 'top-end');
+                    return userLog('info', 'Video gizlilik modundaysa Tam Ekrana izin verilmez', 'top-end');
                 }
                 videoPlayer.style.pointerEvents = this.isVideoOnFullScreen ? 'auto' : 'none';
                 this.toggleFullScreen(videoPlayer);
@@ -2703,7 +2703,7 @@ class RoomClient {
                     if (this.pinnedVideoPlayerId != videoPlayer.id) {
                         this.isVideoPinned = true;
                         if (this.isScreenAllowed) return;
-                        return this.msgPopup('toast', 'Another video seems pinned, unpin it before to pin this one');
+                        return this.msgPopup('toast', 'Başka bir video sabitlenmiş görünüyor, bunu sabitlemeden önce sabitlemeyi kaldırın');
                     }
                     if (!isScreen) videoPlayer.style.objectFit = 'var(--videoObjFit)';
                     this.videoPinMediaContainer.removeChild(cam);
@@ -2732,11 +2732,11 @@ class RoomClient {
                 break;
             case 'vertical':
                 this.videoPinMediaContainer.style.top = 0;
-                this.videoPinMediaContainer.style.width = '75%';
+                this.videoPinMediaContainer.style.width = '90%';
                 this.videoPinMediaContainer.style.height = '100%';
                 this.videoMediaContainer.style.top = 0;
-                this.videoMediaContainer.style.width = '25%';
-                this.videoMediaContainer.style.height = '100%';
+                this.videoMediaContainer.style.width = '10%';
+                this.videoMediaContainer.style.height = '50%';
                 this.videoMediaContainer.style.right = 0;
                 break;
             case 'horizontal':
@@ -4426,8 +4426,8 @@ class RoomClient {
         });
         this.handlePN(video.id, pn.id, d.id);
         if (!this.isMobileDevice) {
-            this.setTippy(pn.id, 'Toggle Pin video player', 'bottom');
-            this.setTippy(e.id, 'Close video player', 'bottom');
+            this.setTippy(pn.id, 'Sabitle', 'bottom');
+            this.setTippy(e.id, 'Sabitlemeyi Kaldır', 'bottom');
         }
         console.log('[openVideo] Video-element-count', this.videoMediaContainer.childElementCount);
         this.sound('joined');
@@ -4877,7 +4877,7 @@ class RoomClient {
                 imageUrl: image.locked,
                 title: 'Oops, Room is Locked',
                 input: 'text',
-                inputPlaceholder: 'Enter the Room password',
+                inputPlaceholder: 'Oda Şifresini Girin',
                 confirmButtonText: `OK`,
                 showClass: { popup: 'animate__animated animate__fadeInDown' },
                 hideClass: { popup: 'animate__animated animate__fadeOutUp' },
@@ -4924,10 +4924,10 @@ class RoomClient {
             showConfirmButton: false,
             background: swalBackground,
             imageUrl: image.poster,
-            title: 'Room has lobby enabled',
-            text: 'Asking to join meeting...',
-            confirmButtonText: `Ok`,
-            denyButtonText: `Leave room`,
+            title: 'Şu An Lobidesiniz',
+            text: 'Onaylanmanız bekleniyor...',
+            confirmButtonText: `Tamam`,
+            denyButtonText: `Odadan Ayrıl`,
             showClass: { popup: 'animate__animated animate__fadeInDown' },
             hideClass: { popup: 'animate__animated animate__fadeOutUp' },
         }).then((result) => {
@@ -5272,15 +5272,15 @@ class RoomClient {
                             "Once muted, you won't be able to unmute them, but they can unmute themselves at any time.";
                         break;
                     case 'hide':
-                        title = 'Hide ' + whoMuteHideStop;
+                        title = 'Gizle ' + whoMuteHideStop;
                         imageUrl = image.hide;
                         text =
-                            "Once hided, you won't be able to unhide them, but they can unhide themselves at any time.";
+                            "Gizlendikten sonra onları gösteremezsiniz, ancak istedikleri zaman kendilerini gösterebilirler.";
                         break;
                     case 'stop':
                         imageUrl = image.stop;
-                        title = 'Stop screen share to the ' + whoMuteHideStop;
-                        text = "Once stop, you won't be able to start them, but they can start themselves at any time.";
+                        title = 'Ekran paylaşımını durdur ' + whoMuteHideStop;
+                        text = "Durdurduğunuzda onları başlatamazsınız, ancak istedikleri zaman kendileri başlayabilirler.";
                         break;
                     default:
                         break;
@@ -5426,7 +5426,7 @@ class RoomClient {
                 this.getId('chatGPTMessages').style.display = 'block';
                 break;
             case 'all':
-                chatAbout.innerHTML = generateChatAboutHTML(image.all, 'Public chat', 'online', participantsCount);
+                chatAbout.innerHTML = generateChatAboutHTML(image.all, 'Herkese açık sohbet', 'online', participantsCount);
                 this.getId('chatPublicMessages').style.display = 'block';
                 break;
             default:
@@ -5442,7 +5442,7 @@ class RoomClient {
                 break;
         }
 
-        if (!this.isMobileDevice) setTippy('chatShowParticipantsList', 'Toggle participants list', 'bottom');
+        if (!this.isMobileDevice) setTippy('chatShowParticipantsList', 'Katılımcı listesi', 'bottom');
 
         const clickedElement = event ? event.target : null;
         if (!event || (clickedElement.tagName != 'BUTTON' && clickedElement.tagName != 'I')) {

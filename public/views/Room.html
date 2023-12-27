@@ -98,11 +98,10 @@
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
         <div id="loadingDiv" class="center pulsate">
-            <h1>Loading</h1>
+            <h1>Elit Live</h1>
             <img src="../images/loading.gif" style="width: 400px" />
             <pre>
-Please allow the camera or microphone
-access to use this app.
+                Lütfen bu uygulamayı kullanmak için kamera veya mikrofon erişimine izin verin.
             </pre>
         </div>
 
@@ -179,33 +178,33 @@ access to use this app.
             <main class="mySettingsMain">
                 <div class="tab">
                     <button id="tabRoomBtn" class="fas fa-home tablinks">
-                        <p class="tabButtonText">Room</p>
+                        <p class="tabButtonText">Oda</p>
                     </button>
                     <button id="tabVideoDevicesBtn" class="fas fa-video tablinks">
                         <p class="tabButtonText">Video</p>
                     </button>
                     <button id="tabAudioDevicesBtn" class="fas fa-microphone tablinks">
-                        <p class="tabButtonText">Audio</p>
+                        <p class="tabButtonText">Ses</p>
                     </button>
                     <button id="tabModeratorBtn" class="fas fa-m tablinks">
-                        <p class="tabButtonText">Moderator</p>
+                        <p class="tabButtonText">Moderatör</p>
                     </button>
                     <button id="tabRecordingBtn" class="fas fa-record-vinyl tablinks">
-                        <p class="tabButtonText">Recording</p>
+                        <p class="tabButtonText">Kayıt</p>
                     </button>
                     <button id="tabVideoShareBtn" class="fab fa-youtube tablinks">
-                        <p class="tabButtonText">Media</p>
+                        <p class="tabButtonText">Medya</p>
                     </button>
                     <button id="tabProfileBtn" class="fas fa-user tablinks">
-                        <p class="tabButtonText">Profile</p>
+                        <p class="tabButtonText">Profil</p>
                     </button>
-                    <button id="tabAspectBtn" class="fas fa-screwdriver-wrench tablinks">
-                        <p class="tabButtonText">Aspect</p>
+                    <button id="tabAspectBtn" class="fas fa-screwdriver-wrench tablinks hidden">
+                        <p class="tabButtonText">Video</p>
                     </button>
                     <button id="tabStylingBtn" class="fas fa-palette tablinks">
-                        <p class="tabButtonText">Style</p>
+                        <p class="tabButtonText">Stiller</p>
                     </button>
-                    <button id="tabLanguagesBtn" class="fas fa-globe tablinks">
+                <button id="tabLanguagesBtn" class="fas fa-globe tablinks hidden">
                         <p class="tabButtonText">Language</p>
                     </button>
                 </div>
@@ -214,21 +213,21 @@ access to use this app.
                     <div id="tabRoom" class="tabcontent">
                         <button id="fullScreenButton" class="hidden">
                             <i class="fas fa-expand-alt"></i>
-                            <p>Full screen mode</p>
+                            <p>Tam Ekran</p>
                         </button>
                         <br />
                         <button id="fileShareButton" class="hidden">
                             <i class="fas fa-folder-open"></i>
-                            <p>File sharing</p>
+                            <p>Dosya Paylaşımı</p>
                         </button>
                         <br />
                         <button id="lockRoomButton" class="hidden">
                             <i class="fas fa-lock-open"></i>
-                            <p>Lock room</p>
+                            <p>Odaya Şifre Ekle</p>
                         </button>
                         <button id="unlockRoomButton" class="hidden">
                             <i class="fas fa-lock"></i>
-                            <p>Unlock room</p>
+                            <p>Oda Şifresini Kaldır</p>
                         </button>
                         <hr style="border: 1px solid grey" />
                         <table class="settingsTable">
@@ -236,7 +235,7 @@ access to use this app.
                                 <td class="custom-width">
                                     <div class="title">
                                         <i class="fas fa-shield-halved"></i>
-                                        <p>Lobby</p>
+                                        <p>Lobi</p>
                                     </div>
                                 </td>
                                 <td>
@@ -249,7 +248,7 @@ access to use this app.
                                 <td class="custom-width">
                                     <div class="title">
                                         <i class="fas fa-microphone-lines"></i>
-                                        <p>Volume bar</p>
+                                        <p>Ses Barı</p>
                                     </div>
                                 </td>
                                 <td>
@@ -262,7 +261,7 @@ access to use this app.
                                 <td class="custom-width">
                                     <div class="title">
                                         <i class="fas fa-music"></i>
-                                        <p>Sounds</p>
+                                        <p>Sesler</p>
                                     </div>
                                 </td>
                                 <td>
@@ -275,7 +274,7 @@ access to use this app.
                                 <td class="custom-width">
                                     <div class="title">
                                         <i class="fas fa-share-alt"></i>
-                                        <p>Share</p>
+                                        <p>Paylaş</p>
                                     </div>
                                 </td>
                                 <td>
@@ -299,7 +298,7 @@ access to use this app.
                                 <td>
                                     <div class="title">
                                         <i class="fas fa-envelope-circle-check"></i>
-                                        <p id="roomSendEmail" style="cursor: pointer">Send email invitation</p>
+                                        <p id="roomSendEmail" style="cursor: pointer">E-Posta Davetiyesi Gönder</p>
                                     </div>
                                 </td>
                             </tr>
@@ -318,16 +317,16 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fas fa-video"></i>
-                            <p>Video Source:</p>
+                            <p>Video KAynağı:</p>
                         </div>
                         <select id="videoSelect" class="form-select text-light bg-dark"></select>
                         <br />
                         <div class="title">
                             <i class="fas fa-palette"></i>
-                            <p>Video Quality:</p>
+                            <p>Video Kalitesi:</p>
                         </div>
                         <select id="videoQuality" class="form-select text-light bg-dark">
-                            <option value="default">🎥&nbsp;Default</option>
+                            <option value="default">🎥&nbsp;Standart</option>
                             <option value="qvga">🎥&nbsp;QVGA</option>
                             <option value="vga">🎥&nbsp;VGA</option>
                             <option value="hd">🎥&nbsp;HD</option>
@@ -338,14 +337,14 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-camera"></i>
-                            <p>Camera FPS:</p>
+                            <p>Kamera FPS:</p>
                         </div>
                         <br />
                         <select id="videoFps" class="form-select text-light bg-dark">
-                            <option value="max">max frame-per-second</option>
-                            <option value="30">30 - frame-per-second</option>
-                            <option value="15">15 - frame-per-second</option>
-                            <option value="5">5 - frame-per-second</option>
+                            <option value="max">Maksimum Kare - Saniye Başına</option>
+                            <option value="30">30 Kare - Saniye Başına</option>
+                            <option value="15">15 Kare - Saniye Başına</option>
+                            <option value="5">5 Kare - Saniye Başına</option>
                         </select>
                         <br />
                         <div id="ScreenFpsDiv" class="hidden">
@@ -355,10 +354,10 @@ access to use this app.
                             </div>
                             <br />
                             <select id="screenFps" class="form-select text-light bg-dark">
-                                <option value="max">max frame-per-second</option>
-                                <option value="30">30 - frame-per-second</option>
-                                <option value="15">15 - frame-per-second</option>
-                                <option value="5">5 - frame-per-second</option>
+                                <option value="max">Maksimum Kare -  Saniye Başına</option>
+                                <option value="30">30 Kare - Saniye Başına</option>
+                                <option value="15">15 Kare - Saniye Başına</option>
+                                <option value="5">5 Kare - Saniye Başına</option>
                             </select>
                         </div>
                     </div>
@@ -367,7 +366,7 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fas fa-microphone"></i>
-                            <p>Microphone:</p>
+                            <p>Mikrofon:</p>
                         </div>
                         <select id="microphoneSelect" class="form-select text-light bg-dark"></select>
                         <br />
@@ -393,7 +392,7 @@ access to use this app.
                                 aria-expanded="false"
                             >
                                 <i class="fas fa-screwdriver-wrench"></i>
-                                <p>Advance options</p>
+                                <p>Gelişmiş Ayarlar</p>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="micOptionsButton">
                                 <!-- onclick="event.stopPropagation()" -->
@@ -402,7 +401,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-ear-listen"></i> -->
-                                                <p>Auto gain control</p>
+                                                <p>Otomatik yükseklik kontrolü</p>
                                             </div>
                                         </td>
                                         <td>
@@ -419,7 +418,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-ear-listen"></i> -->
-                                                <p>Echo cancellation</p>
+                                                <p>Yankı giderme</p>
                                             </div>
                                         </td>
                                         <td>
@@ -437,7 +436,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-ear-listen"></i> -->
-                                                <p>Noise suppression</p>
+                                                <p>Gürültü azaltma</p>
                                             </div>
                                         </td>
                                         <td>
@@ -455,7 +454,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-microphone-lines"></i> -->
-                                                <p>Sample rate</p>
+                                                <p>Örnekleme Hızı</p>
                                             </div>
                                         </td>
                                         <td>
@@ -472,7 +471,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-microphone-lines"></i> -->
-                                                <p>Sample size</p>
+                                                <p>Örnekleme boyutu</p>
                                             </div>
                                         </td>
                                         <td>
@@ -489,7 +488,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-microphone-lines"></i> -->
-                                                <p>Channel count</p>
+                                                <p>Kanal sayısı</p>
                                             </div>
                                         </td>
                                         <td>
@@ -506,7 +505,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fab fa-audible"></i> -->
-                                                <p>Latency</p>
+                                                <p>Gecikme</p>
                                             </div>
                                         </td>
                                         <td>
@@ -529,7 +528,7 @@ access to use this app.
                                         <td class="microphone-table-width">
                                             <div class="title">
                                                 <!-- <i class="fas fa-volume-high"></i> -->
-                                                <p>Volume</p>
+                                                <p>Ses Yüksekliği</p>
                                             </div>
                                         </td>
                                         <td>
@@ -551,7 +550,7 @@ access to use this app.
                                     <tr>
                                         <td>
                                             <button class="btn btn-primary" id="applyAudioOptionsButton">
-                                                Apply options
+                                                Ayarları Uygula
                                             </button>
                                         </td>
                                     </tr>
@@ -562,13 +561,13 @@ access to use this app.
                             <hr style="border: 1px solid grey" />
                             <div class="title">
                                 <i class="fas fa-headphones"></i>
-                                <p>Speaker:</p>
+                                <p>Hoparlör:</p>
                             </div>
                             <select id="speakerSelect" class="form-select text-light bg-dark"></select>
                             <hr style="border: 1px solid grey" />
                             <button id="speakerTestBtn">
                                 <i class="fa-solid fa-circle-play"></i>
-                                <p>Test speaker</p>
+                                <p>Test hoparlör</p>
                             </button>
                             <br />
                         </div>
@@ -579,7 +578,7 @@ access to use this app.
                                     <td class="width-150">
                                         <div class="title">
                                             <i class="fa-solid fa-hand-pointer"></i>
-                                            <p>Push to talk</p>
+                                            <p>Bas Konuş</p>
                                         </div>
                                     </td>
                                     <td>
@@ -594,14 +593,14 @@ access to use this app.
                     </div>
 
                     <div id="tabModerator" class="tabcontent">
-                        <h3 class="mod-title">Moderator options</h3>
+                        <h3 class="mod-title">Moderator Ayarları</h3>
                         <hr style="border: 1px solid grey" />
                         <table class="settingsTable">
                             <tr id="everyoneMuteBtn">
                                 <td style="width: auto">
                                     <div class="title">
                                         <i class="fas fa-microphone-slash"></i>
-                                        <p>Everyone starts muted</p>
+                                        <p>Herkes sessiz başlar</p>
                                     </div>
                                 </td>
                                 <td>
@@ -614,7 +613,7 @@ access to use this app.
                                 <td style="width: auto">
                                     <div class="title">
                                         <i class="fas fa-video-slash"></i>
-                                        <p>Everyone starts hidden</p>
+                                        <p>Herkes kamerası kapalı başlar</p>
                                     </div>
                                 </td>
                                 <td>
@@ -637,7 +636,7 @@ access to use this app.
                                 <td style="width: auto">
                                     <div class="title">
                                         <i class="fas fa-microphone red"></i>
-                                        <p>Everyone can't unmute themselves</p>
+                                        <p>Kimse kendi sesini açamaz</p>
                                     </div>
                                 </td>
                                 <td>
@@ -655,7 +654,7 @@ access to use this app.
                                 <td style="width: auto">
                                     <div class="title">
                                         <i class="fas fa-video red"></i>
-                                        <p>Everyone can't unhide themselves</p>
+                                        <p>Kimse kamerasını açamaz</p>
                                     </div>
                                 </td>
                                 <td>
@@ -673,7 +672,7 @@ access to use this app.
                                 <td style="width: auto">
                                     <div class="title">
                                         <i class="fas fa-display red"></i>
-                                        <p>Everyone can't share screen</p>
+                                        <p>Kimse ekran paylaşamaz</p>
                                     </div>
                                 </td>
                                 <td>
@@ -698,7 +697,7 @@ access to use this app.
                                     <td class="custom-width">
                                         <div class="title">
                                             <i class="fa-solid fa-user-shield"></i>
-                                            <p>Only host</p>
+                                            <p>Sadece Moderatör</p>
                                         </div>
                                     </td>
                                     <td>
@@ -716,11 +715,11 @@ access to use this app.
                         </div>
                         <button id="pauseRecButton" class="hidden">
                             <i class="far fa-pause-circle"></i>
-                            <p>Pause recording</p>
+                            <p>Kaydı duraklat</p>
                         </button>
                         <button id="resumeRecButton" class="hidden">
                             <i class="far fa-play-circle"></i>
-                            <p>Resume recording</p>
+                            <p>Kaydı devam ettir</p>
                         </button>
                         <div id="recordingTime" class="hidden">
                             <hr style="border: 1px solid grey" />
@@ -729,7 +728,7 @@ access to use this app.
                                     <td class="custom-width">
                                         <div class="title">
                                             <i style="color: red" class="fa-solid fa-circle pulsate"></i>
-                                            <p>REC time:</p>
+                                            <p>Kayıt zamanı:</p>
                                         </div>
                                     </td>
                                     <td id="recordingStatus">0s</td>
@@ -739,7 +738,7 @@ access to use this app.
                         <div id="recordingMessage" class="hidden">
                             <div class="title">
                                 <i class="fa-solid fa-ban fa-2xl"></i>
-                                <p>The presenter has disabled meeting recording.</p>
+                                <p>Sunucu toplantı kaydını devre dışı bıraktı.</p>
                             </div>
                         </div>
                         <br />
@@ -749,12 +748,12 @@ access to use this app.
                     <div id="tabVideoShare" class="tabcontent">
                         <button id="videoShareButton">
                             <i class="fab fa-youtube"></i>
-                            <p>Share a Video or Audio</p>
+                            <p>Video veya Ses Paylaş</p>
                         </button>
                         <br />
                         <button id="videoCloseBtn" class="hidden">
                             <i class="fas fa-times"></i>
-                            <p>Close Video or Audio</p>
+                            <p>Video veya Ses Paylaşma</p>
                         </button>
                         <br />
                     </div>
@@ -768,7 +767,7 @@ access to use this app.
                                 <td>
                                     <div class="title">
                                         <i class="fa-solid fa-user"></i>
-                                        <p>Username:</p>
+                                        <p>kullanıcı adı:</p>
                                         <p id="userName">UserName</p>
                                     </div>
                                 </td>
@@ -777,7 +776,7 @@ access to use this app.
                                 <td>
                                     <div class="title">
                                         <i class="fa-solid fa-user-shield"></i>
-                                        <p>Presenter:</p>
+                                        <p>sunucu:</p>
                                         <p id="isUserPresenter">true</p>
                                     </div>
                                 </td>
@@ -789,11 +788,11 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-tv"></i>
-                            <p>Aspect ratio:</p>
+                            <p>En boy oranı:</p>
                         </div>
                         <br />
                         <select id="BtnAspectRatio" class="form-select text-light bg-dark">
-                            <option value="0">default</option>
+                            <option value="0">standart</option>
                             <option value="1">4:3</option>
                             <option value="2">16:9</option>
                             <option value="3">1:1</option>
@@ -802,25 +801,25 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-film"></i>
-                            <p>Video Object fit:</p>
+                            <p>Video Yerleşimi:</p>
                         </div>
                         <br />
                         <select id="BtnVideoObjectFit" class="form-select text-light bg-dark">
-                            <option value="fill">fill</option>
-                            <option value="contain">contain</option>
-                            <option value="cover">cover</option>
-                            <option value="scale-down">scale-down</option>
-                            <option value="none">none</option>
+                            <option value="fill">doldur</option>
+                            <option value="contain">kapsa</option>
+                            <option value="cover">kapla</option>
+                            <option value="scale-down">azaltma</option>
+                            <option value="none">yok</option>
                         </select>
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-circle-play"></i>
-                            <p>Video Controls:</p>
+                            <p>Video Kontrol Butonları:</p>
                         </div>
                         <br />
                         <select id="BtnVideoControls" class="form-select text-light bg-dark">
-                            <option value="off">off</option>
-                            <option value="on">on</option>
+                            <option value="off">kapalı</option>
+                            <option value="on">açık</option>
                         </select>
                         <br />
                     </div>
@@ -834,54 +833,54 @@ access to use this app.
                         <br />
                         <select id="selectTheme" class="form-select text-light bg-dark">
                             <option value="dark">⚫ &nbsp;Dark</option>
-                            <option value="grey">⚪ &nbsp;Grey</option>
-                            <option value="green">🟢 &nbsp;Green</option>
-                            <option value="blue">🔵 &nbsp;Blue</option>
-                            <option value="red">🔴 &nbsp;Red</option>
+                            <option value="grey">⚪ &nbsp;Gri</option>
+                            <option value="green">🟢 &nbsp;Yeşil</option>
+                            <option value="blue">🔵 &nbsp;Mavi</option>
+                            <option value="red">🔴 &nbsp;Kırmızı</option>
                         </select>
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-up-down-left-right"></i>
-                            <p>Buttons bar:</p>
+                            <p>Buton Barı:</p>
                         </div>
                         <br />
                         <select id="BtnsBarPosition" class="form-select text-light bg-dark">
-                            <option value="vertical">Vertical</option>
-                            <option value="horizontal">Horizontal</option>
+                            <option value="vertical">Dikey</option>
+                            <option value="horizontal">Yatay</option>
                         </select>
                         <br />
                         <div id="pinUnpinGridDiv" class="hidden">
                             <div class="title">
                                 <i class="fa-solid fa-map-pin"></i>
-                                <p>Pin video position:</p>
+                                <p>Video Konumu:</p>
                             </div>
                             <br />
                             <select id="pinVideoPosition" class="form-select text-light bg-dark">
-                                <option value="vertical">Vertical</option>
-                                <option value="horizontal">Horizontal</option>
-                                <option value="top">Top</option>
+                                <option value="vertical">Dikey</option>
+                                <option value="horizontal">Yatay</option>
+                                <option value="top">Üst</option>
                             </select>
                         </div>
                         <br />
                     </div>
 
-                    <div id="tabLanguages" class="tabcontent">
+                    <!--<div id="tabLanguages" class="tabcontent">
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-language"></i>
-                            <p>Language:</p>
+                            <p>Dil:</p>
                         </div>
                         <br />
                         <div id="google_translate_element"></div>
                         <br />
-                    </div>
+                    </div>-->
                 </div>
             </main>
         </section>
 
         <div id="videoPinMediaContainer"></div>
         <div id="videoMediaContainer">
-            <!-- <div class="Camera"></div> -->
+       <!-- <div class="Camera"></div> -->
         </div>
         <div id="localAudio"></div>
         <div id="remoteAudios"></div>
@@ -959,7 +958,7 @@ access to use this app.
                 <div id="plist" class="people-list">
                     <!-- CHAT LIST OPTIONS -->
                     <div>
-                        <button id="chatShareRoomBtn"><i class="fas fa-user-plus"></i> Invite user</button>
+                        <button id="chatShareRoomBtn"><i class="fas fa-user-plus"></i> Davet et</button>
                         <button id="chatHideParticipantsList" class="float-right">
                             <i class="fa-solid fa-circle-arrow-left"></i>
                         </button>
@@ -979,7 +978,7 @@ access to use this app.
                             id="searchParticipantsFromList"
                             type="text"
                             class="form-control"
-                            placeholder="Search..."
+                            placeholder="Ara..."
                             maxlength="36"
                         />
                     </div>
@@ -1005,7 +1004,7 @@ access to use this app.
                                     <img src="../images/all.png" alt="avatar" />
                                 </a>
                                 <div class="chat-about">
-                                    <h6 class="mb-0">Public chat</h6>
+                                    <h6 class="mb-0">Herkese açık sohbet</h6>
                                 </div>
                             </div>
 
@@ -1062,17 +1061,17 @@ access to use this app.
                                         </li>
                                         <li>
                                             <button id="chatGhostButton" class="btn-sm">
-                                                <i class="fas fa-circle-half-stroke"></i> Toggle bg
+                                                <i class="fas fa-circle-half-stroke"></i> Arkaplanı Değiştir
                                             </button>
                                         </li>
                                         <li>
                                             <button id="chatSaveButton" class="btn-sm">
-                                                <i class="fas fa-save"></i> Save messages
+                                                <i class="fas fa-save"></i> Mesajları Kaydet
                                             </button>
                                         </li>
                                         <li>
                                             <button id="chatCleanButton" class="btn-sm">
-                                                <i class="fas fa-trash"></i> Clean messages
+                                                <i class="fas fa-trash"></i> Mesajları Temizle
                                             </button>
                                         </li>
                                     </ul>
@@ -1104,7 +1103,7 @@ access to use this app.
                                 <textarea
                                     id="chatMessage"
                                     class="form-control"
-                                    placeholder="Enter text here..."
+                                    placeholder="Mesajınızı yazın..."
                                     rows="1"
                                 ></textarea>
                                 <!-- <input 
@@ -1181,7 +1180,7 @@ access to use this app.
 
         <section id="lobby" class="fadein center">
             <header id="lobbyHeader" class="lobby-header">
-                <div id="lobbyHeaderTitle" class="lobby-header-title">Lobby users</div>
+                <div id="lobbyHeaderTitle" class="lobby-header-title">Lobideki Kullanıcılar</div>
             </header>
             <main>
                 <div id="lobbyUsers">
@@ -1214,11 +1213,11 @@ access to use this app.
         <!-- 
             Start Google Translate 
         -->
-        <script>
+      <!--  <script>
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
             }
         </script>
-        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
     </body>
 </html>

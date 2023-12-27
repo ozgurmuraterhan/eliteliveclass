@@ -155,75 +155,76 @@ function initClient() {
     setTheme();
     if (!DetectRTC.isMobileDevice) {
         refreshMainButtonsToolTipPlacement();
-        setTippy('closeEmojiPickerContainer', 'Close', 'bottom');
-        setTippy('mySettingsCloseBtn', 'Close', 'bottom');
+        setTippy('closeEmojiPickerContainer', 'Kapat', 'bottom');
+        setTippy('mySettingsCloseBtn', 'Kapat', 'bottom');
         setTippy(
             'switchPushToTalk',
-            'If Active, When SpaceBar keydown the microphone will be resumed, on keyup will be paused, like a walkie-talkie.',
+            'Etkinse, Boşluk çubuğuna basıldığında mikrofon açılacak, tuş bırakıldığında duracak, adeta bir telsiz gibi.',
             'right',
         );
-        setTippy('lobbyAcceptAllBtn', 'Accept', 'top');
-        setTippy('lobbyRejectAllBtn', 'Reject', 'top');
+        setTippy('lobbyAcceptAllBtn', 'Kabul Et', 'top');
+        setTippy('lobbyRejectAllBtn', 'Reddet', 'top');
         setTippy(
             'switchLobby',
-            'Lobby mode lets you protect your meeting by only allowing people to enter after a formal approval by a moderator',
+            'Lobi modu, toplantınızı bir moderatör tarafından resmi bir onaydan sonra girişe izin vererek korumanıza olanak tanır.',
             'right',
         );
-        setTippy('switchPitchBar', 'Toggle audio pitch bar', 'right');
-        setTippy('switchSounds', 'Toggle the sounds notifications', 'right');
-        setTippy('switchShare', "Show 'Share Room' popup on join", 'right');
-        setTippy('roomId', 'Room name (click to copy)', 'right');
-        setTippy('sessionTime', 'Session time', 'right');
-        setTippy('recImage', 'Toggle recording', 'right');
-        setTippy('roomRecording', 'Only the host (presenter) has the capability to record the meeting', 'bottom');
-        setTippy('whiteboardGhostButton', 'Toggle transparent background', 'bottom');
-        setTippy('wbBackgroundColorEl', 'Background color', 'bottom');
-        setTippy('wbDrawingColorEl', 'Drawing color', 'bottom');
-        setTippy('whiteboardPencilBtn', 'Drawing mode', 'bottom');
-        setTippy('whiteboardObjectBtn', 'Object mode', 'bottom');
-        setTippy('whiteboardUndoBtn', 'Undo', 'bottom');
-        setTippy('whiteboardRedoBtn', 'Redo', 'bottom');
-        setTippy('whiteboardImgFileBtn', 'Add image file', 'bottom');
-        setTippy('whiteboardPdfFileBtn', 'Add pdf file', 'bottom');
-        setTippy('whiteboardImgUrlBtn', 'Add image url', 'bottom');
-        setTippy('whiteboardTextBtn', 'Add text', 'bottom');
-        setTippy('whiteboardLineBtn', 'Add line', 'bottom');
-        setTippy('whiteboardRectBtn', 'Add rectangle', 'bottom');
-        setTippy('whiteboardTriangleBtn', 'Add triangle', 'bottom');
-        setTippy('whiteboardCircleBtn', 'Add circle', 'bottom');
-        setTippy('whiteboardSaveBtn', 'Save', 'bottom');
-        setTippy('whiteboardEraserBtn', 'Eraser', 'bottom');
-        setTippy('whiteboardCleanBtn', 'Clean', 'bottom');
-        setTippy('whiteboardLockButton', 'If enabled, participants cannot interact', 'right');
-        setTippy('whiteboardCloseBtn', 'Close', 'right');
-        setTippy('chatCleanTextButton', 'Clean', 'top');
-        setTippy('chatPasteButton', 'Paste', 'top');
-        setTippy('chatSendButton', 'Send', 'top');
-        setTippy('showChatOnMsg', 'Show chat on new message comes', 'bottom');
-        setTippy('speechIncomingMsg', 'Speech the incoming messages', 'bottom');
-        setTippy('chatSpeechStartButton', 'Start speech recognition', 'top');
-        setTippy('chatSpeechStopButton', 'Stop speech recognition', 'top');
+        setTippy('switchPitchBar', 'Ses tonu çubuğunu aç/kapat', 'right');
+        setTippy('switchSounds', 'Bildirim seslerini aç/kapat', 'right');
+        setTippy('switchShare', "'Odayı Paylaş' penceresini katılma sırasında göster", 'right');
+        setTippy('roomId', 'Oda adı (kopyalamak için tıklayın)', 'right');
+        setTippy('sessionTime', 'Oturum süresi', 'right');
+        setTippy('recImage', 'Kaydı Aç/Kapat', 'right');
+        setTippy('roomRecording', 'Sadece ev sahibi (sunucu) toplantıyı kaydetme yeteneğine sahiptir', 'bottom');
+        setTippy('whiteboardGhostButton', 'Saydam arka planı aç/kapat', 'bottom');
+        setTippy('wbBackgroundColorEl', 'Arka plan rengi', 'bottom');
+        setTippy('wbDrawingColorEl', 'Çizim rengi', 'bottom');
+        setTippy('whiteboardPencilBtn', 'Çizim modu', 'bottom');
+        setTippy('whiteboardObjectBtn', 'Nesne modu', 'bottom');
+        setTippy('whiteboardUndoBtn', 'Geri Al', 'bottom');
+        setTippy('whiteboardRedoBtn', 'Yinele', 'bottom');
+        setTippy('whiteboardImgFileBtn', 'Resim dosyası ekle', 'bottom');
+        setTippy('whiteboardPdfFileBtn', 'PDF dosyası ekle', 'bottom');
+        setTippy('whiteboardImgUrlBtn', 'Resim URL ekle', 'bottom');
+        setTippy('whiteboardTextBtn', 'Metin ekle', 'bottom');
+        setTippy('whiteboardLineBtn', 'Çizgi ekle', 'bottom');
+        setTippy('whiteboardRectBtn', 'Dikdörtgen ekle', 'bottom');
+        setTippy('whiteboardTriangleBtn', 'Üçgen ekle', 'bottom');
+        setTippy('whiteboardCircleBtn', 'Daire ekle', 'bottom');
+        setTippy('whiteboardSaveBtn', 'Kaydet', 'bottom');
+        setTippy('whiteboardEraserBtn', 'Silgi', 'bottom');
+        setTippy('whiteboardCleanBtn', 'Temizle', 'bottom');
+        setTippy('whiteboardLockButton', 'Etkinse, katılımcılar etkileşimde bulunamaz', 'right');
+        setTippy('whiteboardCloseBtn', 'Kapat', 'right');
+        setTippy('chatCleanTextButton', 'Temizle', 'top');
+        setTippy('chatPasteButton', 'Yapıştır', 'top');
+        setTippy('chatSendButton', 'Gönder', 'top');
+        setTippy('showChatOnMsg', 'Yeni mesaj geldiğinde sohbeti göster', 'bottom');
+        setTippy('speechIncomingMsg', 'Gelen mesajları seslendir', 'bottom');
+        setTippy('chatSpeechStartButton', 'Konuşma tanıma başlat', 'top');
+        setTippy('chatSpeechStopButton', 'Konuşma tanımayı durdur', 'top');
         setTippy('chatEmojiButton', 'Emoji', 'top');
         setTippy('chatMarkdownButton', 'Markdown', 'top');
-        setTippy('chatCloseButton', 'Close', 'bottom');
-        setTippy('chatTogglePin', 'Toggle pin', 'bottom');
-        setTippy('chatHideParticipantsList', 'Hide', 'bottom');
-        setTippy('chatShowParticipantsList', 'Toggle participants list', 'bottom');
-        setTippy('chatMaxButton', 'Maximize', 'bottom');
-        setTippy('chatMinButton', 'Minimize', 'bottom');
-        setTippy('participantsSaveBtn', 'Save participants info', 'bottom');
-        setTippy('participantsUnreadMessagesBtn', 'Toggle unread messages', 'bottom');
-        setTippy('transcriptionCloseBtn', 'Close', 'bottom');
-        setTippy('transcriptionTogglePinBtn', 'Toggle pin', 'bottom');
-        setTippy('transcriptionMaxBtn', 'Maximize', 'bottom');
-        setTippy('transcriptionMinBtn', 'Minimize', 'bottom');
-        setTippy('transcriptionSpeechStatus', 'Status', 'bottom');
-        setTippy('transcriptShowOnMsg', 'Show transcript on new message comes', 'bottom');
-        setTippy('transcriptionGhostBtn', 'Toggle transparent background', 'bottom');
-        setTippy('transcriptionSaveBtn', 'Save', 'bottom');
-        setTippy('transcriptionCleanBtn', 'Clean', 'bottom');
-        setTippy('transcriptionSpeechStart', 'Start transcription', 'top');
-        setTippy('transcriptionSpeechStop', 'Stop transcription', 'top');
+        setTippy('chatCloseButton', 'Kapat', 'bottom');
+        setTippy('chatTogglePin', 'Sabitlemeyi aç/kapat', 'bottom');
+        setTippy('chatHideParticipantsList', 'Gizle', 'bottom');
+        setTippy('chatShowParticipantsList', 'Katılımcı listesini aç/kapat', 'bottom');
+        setTippy('chatMaxButton', 'Büyüt', 'bottom');
+        setTippy('chatMinButton', 'Küçült', 'bottom');
+        setTippy('participantsSaveBtn', 'Katılımcı bilgilerini kaydet', 'bottom');
+        setTippy('participantsUnreadMessagesBtn', 'Okunmamış mesajları aç/kapat', 'bottom');
+        setTippy('transcriptionCloseBtn', 'Kapat', 'bottom');
+        setTippy('transcriptionTogglePinBtn', 'Sabitlemeyi aç/kapat', 'bottom');
+        setTippy('transcriptionMaxBtn', 'Büyüt', 'bottom');
+        setTippy('transcriptionMinBtn', 'Küçült', 'bottom');
+        setTippy('transcriptionSpeechStatus', 'Durum', 'bottom');
+        setTippy('transcriptShowOnMsg', 'Yeni mesaj geldiğinde transkripti göster', 'bottom');
+        setTippy('transcriptionGhostBtn', 'Saydam arka planı aç/kapat', 'bottom');
+        setTippy('transcriptionSaveBtn', 'Kaydet', 'bottom');
+        setTippy('transcriptionCleanBtn', 'Temizle', 'bottom');
+        setTippy('transcriptionSpeechStart', 'Transkripsiyonu başlat', 'top');
+        setTippy('transcriptionSpeechStop', 'Transkripsiyonu durdur', 'top');
+
     }
     setupWhiteboard();
     initEnumerateDevices();
@@ -240,26 +241,28 @@ function initClient() {
 function refreshMainButtonsToolTipPlacement() {
     if (!DetectRTC.isMobileDevice) {
         const placement = BtnsBarPosition.options[BtnsBarPosition.selectedIndex].value == 'vertical' ? 'right' : 'top';
-        setTippy('shareButton', 'Share room', placement);
-        setTippy('hideMeButton', 'Toggle hide self view', placement);
-        setTippy('startAudioButton', 'Start the audio', placement);
-        setTippy('stopAudioButton', 'Stop the audio', placement);
-        setTippy('startVideoButton', 'Start the video', placement);
-        setTippy('stopVideoButton', 'Stop the video', placement);
-        setTippy('startScreenButton', 'Start screen share', placement);
-        setTippy('stopScreenButton', 'Stop screen share', placement);
-        setTippy('startRecButton', 'Start recording', placement);
-        setTippy('stopRecButton', 'Stop recording', placement);
-        setTippy('raiseHandButton', 'Raise your hand', placement);
-        setTippy('lowerHandButton', 'Lower your hand', placement);
-        setTippy('roomEmojiPicker', 'Toggle emoji reaction', placement);
-        setTippy('swapCameraButton', 'Swap the camera', placement);
-        setTippy('chatButton', 'Toggle the chat', placement);
-        setTippy('transcriptionButton', 'Toggle transcription', placement);
-        setTippy('whiteboardButton', 'Toggle the whiteboard', placement);
-        setTippy('settingsButton', 'Toggle the settings', placement);
-        setTippy('aboutButton', 'About this project', placement);
-        setTippy('exitButton', 'Leave room', placement);
+
+        setTippy('shareButton', 'Odayı paylaş', placement);
+        setTippy('hideMeButton', 'Gizlemeyi aç/kapat', placement);
+        setTippy('startAudioButton', 'Ses aç', placement);
+        setTippy('stopAudioButton', 'Ses kapat', placement);
+        setTippy('startVideoButton', 'Kamera aç', placement);
+        setTippy('stopVideoButton', 'Kamera kapat', placement);
+        setTippy('startScreenButton', 'Ekran paylaşımı başlat', placement);
+        setTippy('stopScreenButton', 'Ekran paylaşımı durdur', placement);
+        setTippy('startRecButton', 'Kayıt başlat', placement);
+        setTippy('stopRecButton', 'Kayıt durdur', placement);
+        setTippy('raiseHandButton', 'El kaldır', placement);
+        setTippy('lowerHandButton', 'El indir', placement);
+        setTippy('roomEmojiPicker', 'Emoji tepkisini değiştir', placement);
+        setTippy('swapCameraButton', 'Kamera değiştir', placement);
+        setTippy('chatButton', 'Sohbet aç/kapat', placement);
+        setTippy('transcriptionButton', 'Çevri aç/kapat', placement);
+        setTippy('whiteboardButton', 'Beyaz tahta', placement);
+        setTippy('settingsButton', 'Ayarlar', placement);
+        setTippy('aboutButton', 'Bu proje hakkında', placement);
+        setTippy('exitButton', 'Ayrıl', placement);
+
     }
 }
 
@@ -719,18 +722,18 @@ function whoAreYou() {
         background: swalBackground,
         title: 'nohutakademi SFU',
         input: 'text',
-        inputPlaceholder: 'Enter your name',
+        inputPlaceholder: 'İsminizi Girin',
         inputAttributes: { maxlength: 32 },
         inputValue: default_name,
         html: initUser, // Inject HTML
-        confirmButtonText: `Join meeting`,
+        confirmButtonText: `Toplantıya Katıl`,
         showClass: { popup: 'animate__animated animate__fadeInDown' },
         hideClass: { popup: 'animate__animated animate__fadeOutUp' },
         inputValidator: (name) => {
-            if (!name) return 'Please enter your name';
-            if (name.length > 15) return 'Name must be max 15 char';
+            if (!name) return 'Lütfen İsminizi Girin';
+            if (name.length > 15) return 'Ad maksimum 15 karakter olmalıdır';
             name = filterXSS(name);
-            if (isHtml(name)) return 'Invalid name!';
+            if (isHtml(name)) return 'İsim Alınamaz!';
             if (!getCookie(room_id + '_name')) {
                 window.localStorage.peer_name = name;
             }
@@ -864,22 +867,22 @@ async function shareRoom(useNavigator = false) {
         Swal.fire({
             background: swalBackground,
             position: 'center',
-            title: 'Share the room',
+            title: 'Odayı Paylaş',
             html: `
             <div id="qrRoomContainer">
                 <canvas id="qrRoom"></canvas>
             </div>
             <br/>
-            <p style="background:transparent; color:rgb(8, 189, 89);">Join from your mobile device</p>
-            <p style="background:transparent; color:white; font-family: Arial, Helvetica, sans-serif;">No need for apps, simply capture the QR code with your mobile camera Or Invite someone else to join by sending them the following URL</p>
+            <p style="background:transparent; color:rgb(8, 189, 89);">Mobil cihazınızdan katılın</p>
+            <p style="background:transparent; color:white; font-family: Arial, Helvetica, sans-serif;">Uygulamalara gerek yok, mobil kameranızla QR kodunu yakalayın veya aşağıdaki URL'yi göndererek başka birini katılmaya davet edin</p>
             <p style="background:transparent; color:rgb(8, 189, 89);">${RoomURL}</p>`,
             showDenyButton: true,
             showCancelButton: true,
             cancelButtonColor: 'red',
             denyButtonColor: 'green',
-            confirmButtonText: `Copy URL`,
-            denyButtonText: `Email invite`,
-            cancelButtonText: `Close`,
+            confirmButtonText: `Adresi Kopyala`,
+            denyButtonText: `E-Posta Daveti`,
+            cancelButtonText: `Kapat`,
             showClass: { popup: 'animate__animated animate__fadeInDown' },
             hideClass: { popup: 'animate__animated animate__fadeOutUp' },
         }).then((result) => {
@@ -1479,11 +1482,12 @@ function handleButtons() {
 
 function setButtonsInit() {
     if (!DetectRTC.isMobileDevice) {
-        setTippy('initAudioButton', 'Toggle the audio', 'top');
-        setTippy('initVideoButton', 'Toggle the video', 'top');
-        setTippy('initAudioVideoButton', 'Toggle the audio & video', 'top');
-        setTippy('initStartScreenButton', 'Toggle screen sharing', 'top');
-        setTippy('initStopScreenButton', 'Toggle screen sharing', 'top');
+        setTippy('initAudioButton', 'Ses Aç/Kapa', 'top');
+        setTippy('initVideoButton', 'Kamera Aç/Kapa', 'top');
+        setTippy('initAudioVideoButton', 'Sesi ve Görüntüyü Aç/Kapa', 'top');
+        setTippy('initStartScreenButton', 'Ekran Paylaşımını Aç', 'top');
+        setTippy('initStopScreenButton', 'Ekran Paylaşımını Kapat', 'top');
+
     }
     initAudioButton = document.getElementById('initAudioButton');
     initVideoButton = document.getElementById('initVideoButton');
@@ -3004,7 +3008,7 @@ async function getParticipantsList(peers) {
             alt="avatar"
         />
         <div class="about">
-            <div class="name">Public chat</div>
+            <div class="name">Herkese açık sohbet</div>
             <div class="status"> <i class="fa fa-circle online"></i> online ${participantsCount}</div>
         </div>`;
 
@@ -3168,16 +3172,16 @@ async function getParticipantsList(peers) {
 function setParticipantsTippy(peers) {
     //
     if (!DetectRTC.isMobileDevice) {
-        setTippy('muteAllButton', 'Mute all participants', 'top');
-        setTippy('hideAllButton', 'Hide all participants', 'top');
-        setTippy('stopAllButton', 'Stop screen share to all participants', 'top');
+        setTippy('muteAllButton', 'Tüm katılımcıların sesini kapat', 'top');
+        setTippy('hideAllButton', 'Tüm katılımcıları gizle', 'top');
+        setTippy('stopAllButton', 'Tüm katılımcılarla ekran paylaşımını durdurun', 'top');
         //
         for (let peer of Array.from(peers.keys())) {
             const peer_info = peers.get(peer).peer_info;
             const peer_id = peer_info.peer_id;
-            setTippy(peer_id + '___pAudio', 'Mute', 'top');
-            setTippy(peer_id + '___pVideo', 'Hide', 'top');
-            setTippy(peer_id + '___pScreen', 'Stop', 'top');
+            setTippy(peer_id + '___pAudio', 'Sesi Kıs', 'top');
+            setTippy(peer_id + '___pVideo', 'Gizle', 'top');
+            setTippy(peer_id + '___pScreen', 'Durdur', 'top');
         }
     }
 }

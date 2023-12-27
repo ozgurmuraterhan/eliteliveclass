@@ -10,19 +10,19 @@ const isRulesActive = true;
 
 const BUTTONS = {
     main: {
-        shareButton: true,
-        hideMeButton: true,
+        shareButton: false,
+        hideMeButton: false,
         startAudioButton: true,
         startVideoButton: true,
         startScreenButton: true,
         swapCameraButton: true,
         chatButton: true,
         raiseHandButton: true,
-        transcriptionButton: true,
+        transcriptionButton: false,
         whiteboardButton: true,
-        emojiRoomButton: true,
+        emojiRoomButton: false,
         settingsButton: true,
-        aboutButton: true, // Please keep me always visible, thank you!
+        aboutButton: false, // Please keep me always visible, thank you!
         exitButton: true,
     },
     settings: {
@@ -38,20 +38,20 @@ const BUTTONS = {
     producerVideo: {
         videoPictureInPicture: true,
         fullScreenButton: true,
-        snapShotButton: true,
+        snapShotButton: false,
         muteAudioButton: true,
         videoPrivacyButton: true,
     },
     consumerVideo: {
-        videoPictureInPicture: true,
-        fullScreenButton: true,
-        snapShotButton: true,
+        videoPictureInPicture: false,
+        fullScreenButton: false,
+        snapShotButton: false,
         sendMessageButton: true,
-        sendFileButton: true,
-        sendVideoButton: true,
-        muteVideoButton: true,
-        muteAudioButton: true,
-        audioVolumeInput: true,
+        sendFileButton: false,
+        sendVideoButton: false,
+        muteVideoButton: false,
+        muteAudioButton: false,
+        audioVolumeInput: false,
         ejectButton: true,
     },
     videoOff: {
@@ -63,18 +63,18 @@ const BUTTONS = {
         ejectButton: true,
     },
     chat: {
-        chatPinButton: true,
-        chatMaxButton: true,
-        chatSaveButton: true,
-        chatEmojiButton: true,
-        chatMarkdownButton: true,
-        chatSpeechStartButton: true,
+        chatPinButton: false,
+        chatMaxButton: false,
+        chatSaveButton: false,
+        chatEmojiButton: false,
+        chatMarkdownButton: false,
+        chatSpeechStartButton: false,
     },
     participantsList: {
-        saveInfoButton: true,
+        saveInfoButton: false,
     },
     whiteboard: {
-        whiteboardLockButton: false,
+        whiteboardLockButton: true,
     },
     //...
 };
