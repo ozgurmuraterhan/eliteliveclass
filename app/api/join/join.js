@@ -11,15 +11,6 @@ async function getJoin() {
 
         const response = await fetch(MIROTALK_URL, {
 
-            asdasd
-
-            asdasd
-
-
-            asdasd
-
-
-            asd
             method: 'POST',
             headers: {
                 authorization: API_KEY_SECRET,
