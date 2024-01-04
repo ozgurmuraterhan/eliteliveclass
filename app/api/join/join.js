@@ -10,6 +10,16 @@ async function getJoin() {
          const MIROTALK_URL = 'http://localhost:3010/api/v1/join';
 
         const response = await fetch(MIROTALK_URL, {
+
+            asdasd
+
+            asdasd
+
+
+            asdasd
+
+
+            asd
             method: 'POST',
             headers: {
                 authorization: API_KEY_SECRET,
