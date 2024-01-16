@@ -2724,7 +2724,8 @@ class RoomClient {
                 this.videoPinMediaContainer.style.top = '25%';
                 this.videoPinMediaContainer.style.width = '100%';
                 this.videoPinMediaContainer.style.height = '75%';
-                this.videoMediaContainer.style.top = '0%';
+                this.videoMediaContainer.style.top = 'auto';
+                this.videoMediaContainer.style.bottom = '0px';
                 this.videoMediaContainer.style.right = null;
                 this.videoMediaContainer.style.width = null;
                 this.videoMediaContainer.style.width = '100% !important';
@@ -2732,18 +2733,19 @@ class RoomClient {
                 break;
             case 'vertical':
                 this.videoPinMediaContainer.style.top = 0;
-                this.videoPinMediaContainer.style.width = '90%';
+                this.videoPinMediaContainer.style.width = '100%';
                 this.videoPinMediaContainer.style.height = '100%';
-                this.videoMediaContainer.style.top = 0;
-                this.videoMediaContainer.style.width = '10%';
-                this.videoMediaContainer.style.height = '50%';
+                this.videoMediaContainer.style.top = 'auto';
+                this.videoMediaContainer.style.bottom = '0px';
+                this.videoMediaContainer.style.width = '20%';
+                this.videoMediaContainer.style.height = '30%';
                 this.videoMediaContainer.style.right = 0;
                 break;
             case 'horizontal':
-                this.videoPinMediaContainer.style.top = 0;
+                this.videoPinMediaContainer.style.top = "auto";
                 this.videoPinMediaContainer.style.width = '100%';
                 this.videoPinMediaContainer.style.height = '75%';
-                this.videoMediaContainer.style.top = '75%';
+                this.videoMediaContainer.style.bottom = '0px';
                 this.videoMediaContainer.style.right = null;
                 this.videoMediaContainer.style.width = null;
                 this.videoMediaContainer.style.width = '100% !important';
@@ -3052,7 +3054,8 @@ class RoomClient {
 
     chatUnpin() {
         if (!this.isVideoPinned) {
-            this.videoMediaContainer.style.top = 0;
+            this.videoMediaContainer.style.top = "auto";
+            this.videoMediaContainer.style.bottom = 0;
             this.videoMediaContainer.style.right = null;
             this.videoMediaContainer.style.width = '100%';
             this.videoMediaContainer.style.height = '100%';
