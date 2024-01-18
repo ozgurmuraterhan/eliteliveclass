@@ -3008,8 +3008,8 @@ async function getParticipantsList(peers) {
             alt="avatar"
         />
         <div class="about">
-            <div class="name">Herkese açık sohbet</div>
-            <div class="status"> <i class="fa fa-circle online"></i> online ${participantsCount}</div>
+            <div class="name">Öğrenciler ${participantsCount -1 } Kişi</div>
+            <div class="status"> <i class="fa fa-circle online"></i> online  </div>
         </div>`;
 
     // ONLY PRESENTER CAN EXECUTE THIS CMD

@@ -6,7 +6,9 @@
     /* overflow-y: auto;
     overflow-x: hidden; */
 }
-
+#ChatGPT{
+    display: none;
+}
 /* Chat Room */
 .chat-container {
     z-index: 5;

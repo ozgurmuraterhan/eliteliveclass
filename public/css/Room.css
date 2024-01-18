@@ -993,7 +993,15 @@ progress {
 /*--------------------------------------------------------------
 # Whiteboard
 --------------------------------------------------------------*/
+div#videoMediaContainer div.Camera  {
+    display: none!important;
+}
 
+div#videoMediaContainer div.Camera:first-child {
+    display: block!important;
+    width: 100%!important;
+    height: 85%!important;
+}
 #whiteboard {
     z-index: 4;
     position: absolute;
